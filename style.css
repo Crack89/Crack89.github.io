@@ -45,16 +45,13 @@ h1 {
     box-shadow: 0px 3px 3px rgba(9, 34, 117, 0.932);
     position: relative;
     bottom: 30px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
     
 }
 
-.bottom {
-
-text-decoration: none;
-color: white;
-font-size: 18px;
-font-weight: 700;
-}
 
 .bottom:hover {
     background-color: rgba(9, 34, 117, 0.932);
@@ -72,4 +69,7 @@ font-weight: 700;
 .text {
     position: relative;
     bottom: 150px;
+}
+#mc_embed_signup form {
+    text-align: center;
 }
