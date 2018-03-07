@@ -8,7 +8,7 @@ body, html {
 .container {
     background-image: url(https://www.wallpaperup.com/uploads/wallpapers/2015/04/02/653105/09d95a6f0e5f6e6a79bcbc58aa1222ad-1000.jpg);
     background-repeat: no-repeat;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Helvetica;
     height: 100%;
     background-size: cover; 
     background-position: center; 
@@ -23,15 +23,6 @@ h1 {
     text-shadow: 0 1px 3px grey;
 }
 
-
-
-.text p {
-    margin: 0px auto;
-    text-align: center;
-    font-size: 30px; 
-    color: rgb(28, 55, 143);
-    font-weight: 700;
-}
 
 .bottom {
     
@@ -69,8 +60,4 @@ h1 {
 .text {
     position: relative;
     bottom: 150px;
-}
-#mc_embed_signup {
-    display: inline;
-    text-align: center;
 }
