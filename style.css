@@ -70,6 +70,7 @@ h1 {
     position: relative;
     bottom: 150px;
 }
-#mc_embed_signup form {
+#mc_embed_signup {
+    display: inline;
     text-align: center;
 }
