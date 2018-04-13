@@ -531,9 +531,18 @@ h3 {
 	.contactForm, .contactInfo{
 		width: 90%;
 	}
-	.workContainer a{
-		max-width: 90%;
+	.myWorkClass .link{
+		width: 90%;
+		
+	}
+	.workContainer .imgContainer{
+		opacity: 1;
 	}
 
 
+}
+@media(max-width: 1000px){
+	.aboutMeContent{
+		width: 90%;
+	}
 }
