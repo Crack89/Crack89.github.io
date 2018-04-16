@@ -39,3 +39,9 @@ function toTop(){
 
     window.scroll(0, marginY);
 }
+
+var message = document.getElementById("message");
+
+message.addEventListener("click", function(){
+    alert("Sorry, but this contact form is not valid yet. If you would like to contact me, please use my phone numer or e-mail :)")
+})
