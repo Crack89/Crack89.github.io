@@ -164,7 +164,7 @@ a{
 /*========================== END OF HEADER ================= */
 
 .content {
-	background-color: rgb(199, 202, 201);
+	background-color: rgba(211, 211, 211, 0.836);
 	color:  rgba(58, 58, 58, 0.774);
 	display: flex;
 	flex-flow: column nowrap;
@@ -297,7 +297,7 @@ h3 {
 
 	width: 90%;
 	margin: 20px auto;
-	margin-bottom: 60px;
+	margin-bottom: 30px;
 	text-align: justify;
 }
 
@@ -306,9 +306,26 @@ h3 {
 	display: flex;
 	flex-flow: row wrap;
 
+}
+
+
+#pointer{
+	position: relative;
+	justify-self: center;
+	margin: auto;
+	margin-bottom: 20px;
+	animation: pointer_animation 5s infinite;
+	animation-timing-function: ease-in-out;
 
 }
 
+@keyframes pointer_animation{
+	0% { top: -15px;}
+	25% { top: 15px;}
+	50% { top: -15px;}
+	75% { top: 15px;}
+	100% { top: -15px;}	
+}
 
 .cardBox{
 	width: 250px;
@@ -535,7 +552,7 @@ h3 {
 	
 }
  form input, textarea{
-	 background-color: rgba(241, 241, 241, 0.836);
+	 background-color: rgba(241, 241, 241, 0.945);
 	 border: 1px solid rgba(125, 120, 129, 0);
 	 border-radius: 2px;
 	 padding: 10px;
@@ -650,6 +667,7 @@ h3 {
 		width: 90%;
 	}
 
+
 }
 @media(max-width: 1000px){
 	.aboutMeContent{
@@ -661,4 +679,5 @@ h3 {
 		background-color: rgba(46, 56, 55, 0.85);
 	
 	}
+
 }
