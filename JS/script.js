@@ -1,15 +1,15 @@
-var button = document.getElementsByClassName("menu-icon")[0];
-var menu = document.getElementsByClassName("menu")[0];
+const button = document.getElementsByClassName("menu-icon")[0];
+const menu = document.getElementsByClassName("menu")[0];
 button.onclick = function() {
     menu.classList.toggle("show");
     return false;
 }
 
 
-var marginY = 0;
-var destination = 0;
-var speed = 9;
-var scroller = null;
+let marginY = 0;
+let destination = 0;
+const speed = 9;
+let scroller = null;
 
 function initScroll(elementId){
     destination = document.getElementById(elementId).offsetTop;
@@ -40,7 +40,7 @@ function toTop(){
     window.scroll(0, marginY);
 }
 
-var message = document.getElementById("message");
+const message = document.getElementById("message");
 
 message.addEventListener("click", function(){
     alert("Sorry, but this contact form is not valid yet. If you would like to contact me, please use my phone numer or e-mail :)")
