@@ -1,20 +1,21 @@
+
+//menu dla małych ekranów
 const button = document.getElementsByClassName("menu-icon")[0];
 const menu = document.getElementsByClassName("menu")[0];
-button.onclick = function() {
+button.onclick = () => {
     menu.classList.toggle("show");
     return false;
 }
 
-
+//smooth scroll do dołu 
 let marginY = 0;
 let destination = 0;
 const speed = 9;
 let scroller = null;
 
-function initScroll(elementId){
+const initScroll = (elementId) => {
     destination = document.getElementById(elementId).offsetTop;
-    // console.log(destination);
-    scroller = setTimeout(function(){
+    scroller = setTimeout(() => {
         initScroll(elementId);
     }, 1);
 
@@ -26,8 +27,10 @@ function initScroll(elementId){
 
     window.scroll(0, marginY);
 }
+
+//smooth scroll do góry
 function toTop(){
-    scroller = setTimeout(function(){
+    scroller = setTimeout(() =>{
         toTop();
     }, 1);
 
@@ -40,8 +43,9 @@ function toTop(){
     window.scroll(0, marginY);
 }
 
+//alert do formularza kontaktowego
 const message = document.getElementById("message");
 
-message.addEventListener("click", function(){
+message.addEventListener("click", () => {
     alert("Sorry, but this contact form is not valid yet. If you would like to contact me, please use my phone numer or e-mail :)")
 })
